@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tacheLayoutView"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/tache_view_background"
+    android:clickable="true"
+    android:focusable="true"
+
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="30dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="55dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="216dp"
+        android:text="Button"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/IntervNomView"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/intervDateView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="170dp"
+        />
+
+    <TextView
+        android:id="@+id/IntervTypeView"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/intervDateView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginEnd="46dp"
+        />
+
+    <TextView
+        android:id="@+id/intervNmrView"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/intervDateView"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="274dp" />
+
+    <TextView
+        android:id="@+id/intervDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp" />
+</RelativeLayout>
+
