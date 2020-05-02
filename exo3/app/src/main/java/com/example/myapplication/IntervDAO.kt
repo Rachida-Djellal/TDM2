@@ -11,6 +11,10 @@ public interface IntervDAO {
     @Query("SELECT * FROM interv WHERE id = :code")
     fun getInterv(code: Int): List<Interv>
 
+
+    @Query("SELECT * FROM interv WHERE  Date = :date1")
+    fun getIntervss(date1  :String): MutableList<Interv>
+
     @Insert
     fun ajouter(interv : Interv)
 

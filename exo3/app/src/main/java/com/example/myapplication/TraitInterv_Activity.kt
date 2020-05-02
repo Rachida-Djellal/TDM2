@@ -68,13 +68,13 @@ class TraitInterv_Activity : AppCompatActivity() {
            btn_supp.visibility= View.GONE
        }
         btn_supp.setOnClickListener{
-            val num: Int = NumInter.text.toInt()
+            val num: String= NumInter.text.toString()
             val type: String = spinner_type_text.text.toString()
             val nomp: String = spinner_nom_text.text.toString()
             val date: String = InputDate.text.toString()
             val pos =intent.getIntExtra("pos",0)
 
-            val interv: Interv = Interv(num, num, nomp, type, date)
+            val interv: Interv = Interv(num.toInt(), num, nomp, type, date)
 
             this.db = DataBase.invoke(this)
             this.dao = db?.intervDAO()
@@ -90,7 +90,7 @@ class TraitInterv_Activity : AppCompatActivity() {
 
 
             if(mode == "ajout") {
-                val num: Int = NumInter.text.toInt()
+                val num: String = NumInter.text.toString()
                 val type: String = spinner_type.selectedItem.toString()
                 val nomp: String = spinner_nom.selectedItem.toString()
                 val date: String = InputDate.text.toString()
@@ -111,7 +111,7 @@ class TraitInterv_Activity : AppCompatActivity() {
                     val nomp: String = spinner_nom.selectedItem.toString()
                     val date: String = InputDate.text.toString()
                     val pos =intent.getIntExtra("pos",0)
-                    val interv: Interv = Interv(num, num, nomp, type, date)
+                    val interv: Interv = Interv(num.toInt(), num, nomp, type, date)
 
 
                     this.db = DataBase.invoke(this)
